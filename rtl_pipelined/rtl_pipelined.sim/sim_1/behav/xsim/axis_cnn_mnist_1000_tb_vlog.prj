@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../rtl_pipelined.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../rtl_pipelined.gen/sources_1/bd/design_1/ipshared/8cdf/hdl" --include "../../../../rtl_pipelined.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../rtl_pipelined.gen/sources_1/bd/design_1/ipshared/66be/hdl/verilog" --include "../../../../rtl_pipelined.gen/sources_1/bd/design_1/ipshared/8713/hdl" --include "C:/ProgramFiles/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../rtl/module/axis_cnn_mnist.v" \
+"../../../../rtl/module/comparator.v" \
+"../../../../rtl/module/conv1_buf.v" \
+"../../../../rtl/module/conv1_calc.v" \
+"../../../../rtl/module/conv1_layer.v" \
+"../../../../rtl/module/conv2_buf.v" \
+"../../../../rtl/module/conv2_calc.v" \
+"../../../../rtl/module/conv2_layer.v" \
+"../../../../rtl/module/fully_connected.v" \
+"../../../../rtl/module/maxpool_relu.v" \
+"../../../../rtl/testbench/axis_cnn_mnist_1000_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

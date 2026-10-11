@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="21.000001 us"></ZoomEndTime>
+      <Cursor1Time time="5.265000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="134" />
+   <wvobject fp_name="/top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/pixels" type="array">
+      <obj_property name="ElementShortName">pixels[0:783][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixels[0:783][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/img_idx" type="array">
+      <obj_property name="ElementShortName">img_idx[9:0]</obj_property>
+      <obj_property name="ObjectShortName">img_idx[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv_out_1" type="array">
+      <obj_property name="ElementShortName">conv_out_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv_out_2" type="array">
+      <obj_property name="ElementShortName">conv_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv_out_3" type="array">
+      <obj_property name="ElementShortName">conv_out_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_out_1" type="array">
+      <obj_property name="ElementShortName">conv2_out_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_out_2" type="array">
+      <obj_property name="ElementShortName">conv2_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_out_3" type="array">
+      <obj_property name="ElementShortName">conv2_out_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/max_value_1" type="array">
+      <obj_property name="ElementShortName">max_value_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/max_value_2" type="array">
+      <obj_property name="ElementShortName">max_value_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/max_value_3" type="array">
+      <obj_property name="ElementShortName">max_value_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/max2_value_1" type="array">
+      <obj_property name="ElementShortName">max2_value_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max2_value_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/max2_value_2" type="array">
+      <obj_property name="ElementShortName">max2_value_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max2_value_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/max2_value_3" type="array">
+      <obj_property name="ElementShortName">max2_value_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max2_value_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fc_out_data" type="array">
+      <obj_property name="ElementShortName">fc_out_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_out_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/decision" type="array">
+      <obj_property name="ElementShortName">decision[3:0]</obj_property>
+      <obj_property name="ObjectShortName">decision[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/valid_out_1" type="logic">
+      <obj_property name="ElementShortName">valid_out_1</obj_property>
+      <obj_property name="ObjectShortName">valid_out_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/valid_out_2" type="logic">
+      <obj_property name="ElementShortName">valid_out_2</obj_property>
+      <obj_property name="ObjectShortName">valid_out_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/valid_out_3" type="logic">
+      <obj_property name="ElementShortName">valid_out_3</obj_property>
+      <obj_property name="ObjectShortName">valid_out_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/valid_out_4" type="logic">
+      <obj_property name="ElementShortName">valid_out_4</obj_property>
+      <obj_property name="ObjectShortName">valid_out_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/valid_out_5" type="logic">
+      <obj_property name="ElementShortName">valid_out_5</obj_property>
+      <obj_property name="ObjectShortName">valid_out_5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/valid_out_6" type="logic">
+      <obj_property name="ElementShortName">valid_out_6</obj_property>
+      <obj_property name="ObjectShortName">valid_out_6</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Conv 1 Buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/buffer" type="array">
+      <obj_property name="ElementShortName">buffer[0:139][7:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer[0:139][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/buf_idx" type="array">
+      <obj_property name="ElementShortName">buf_idx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_idx[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/buf_flag" type="array">
+      <obj_property name="ElementShortName">buf_flag[2:0]</obj_property>
+      <obj_property name="ObjectShortName">buf_flag[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_0" type="array">
+      <obj_property name="ElementShortName">data_out_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_1" type="array">
+      <obj_property name="ElementShortName">data_out_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_2" type="array">
+      <obj_property name="ElementShortName">data_out_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_3" type="array">
+      <obj_property name="ElementShortName">data_out_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_4" type="array">
+      <obj_property name="ElementShortName">data_out_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_5" type="array">
+      <obj_property name="ElementShortName">data_out_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_6" type="array">
+      <obj_property name="ElementShortName">data_out_6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_7" type="array">
+      <obj_property name="ElementShortName">data_out_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_8" type="array">
+      <obj_property name="ElementShortName">data_out_8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_8[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_9" type="array">
+      <obj_property name="ElementShortName">data_out_9[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_9[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_10" type="array">
+      <obj_property name="ElementShortName">data_out_10[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_10[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_11" type="array">
+      <obj_property name="ElementShortName">data_out_11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_11[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_12" type="array">
+      <obj_property name="ElementShortName">data_out_12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_12[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_13" type="array">
+      <obj_property name="ElementShortName">data_out_13[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_13[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_14" type="array">
+      <obj_property name="ElementShortName">data_out_14[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_14[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_15" type="array">
+      <obj_property name="ElementShortName">data_out_15[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_15[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_16" type="array">
+      <obj_property name="ElementShortName">data_out_16[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_16[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_17" type="array">
+      <obj_property name="ElementShortName">data_out_17[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_17[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_18" type="array">
+      <obj_property name="ElementShortName">data_out_18[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_18[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_19" type="array">
+      <obj_property name="ElementShortName">data_out_19[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_19[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_20" type="array">
+      <obj_property name="ElementShortName">data_out_20[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_20[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_21" type="array">
+      <obj_property name="ElementShortName">data_out_21[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_21[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_22" type="array">
+      <obj_property name="ElementShortName">data_out_22[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_22[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_23" type="array">
+      <obj_property name="ElementShortName">data_out_23[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_23[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/data_out_24" type="array">
+      <obj_property name="ElementShortName">data_out_24[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_24[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/w_idx" type="array">
+      <obj_property name="ElementShortName">w_idx[4:0]</obj_property>
+      <obj_property name="ObjectShortName">w_idx[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/h_idx" type="array">
+      <obj_property name="ElementShortName">h_idx[4:0]</obj_property>
+      <obj_property name="ObjectShortName">h_idx[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_buf/valid_out_buf" type="logic">
+      <obj_property name="ElementShortName">valid_out_buf</obj_property>
+      <obj_property name="ObjectShortName">valid_out_buf</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Conv 1 Calc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/valid_out_buf" type="logic">
+      <obj_property name="ElementShortName">valid_out_buf</obj_property>
+      <obj_property name="ObjectShortName">valid_out_buf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/conv_out_1" type="array">
+      <obj_property name="ElementShortName">conv_out_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/conv_out_2" type="array">
+      <obj_property name="ElementShortName">conv_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/conv_out_3" type="array">
+      <obj_property name="ElementShortName">conv_out_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv1_layer/conv1_calc/valid_out_calc" type="logic">
+      <obj_property name="ElementShortName">valid_out_calc</obj_property>
+      <obj_property name="ObjectShortName">valid_out_calc</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Max Pool Relu 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/conv_out_1" type="array">
+      <obj_property name="ElementShortName">conv_out_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/conv_out_2" type="array">
+      <obj_property name="ElementShortName">conv_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/conv_out_3" type="array">
+      <obj_property name="ElementShortName">conv_out_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/buffer1" type="array">
+      <obj_property name="ElementShortName">buffer1[0:11][11:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer1[0:11][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/buffer2" type="array">
+      <obj_property name="ElementShortName">buffer2[0:11][11:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer2[0:11][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/buffer3" type="array">
+      <obj_property name="ElementShortName">buffer3[0:11][11:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer3[0:11][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/pcount" type="array">
+      <obj_property name="ElementShortName">pcount[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pcount[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/max_value_1" type="array">
+      <obj_property name="ElementShortName">max_value_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/max_value_2" type="array">
+      <obj_property name="ElementShortName">max_value_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/max_value_3" type="array">
+      <obj_property name="ElementShortName">max_value_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_1/valid_out_relu" type="logic">
+      <obj_property name="ElementShortName">valid_out_relu</obj_property>
+      <obj_property name="ObjectShortName">valid_out_relu</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Conv 2 Calc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/max_value_1" type="array">
+      <obj_property name="ElementShortName">max_value_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/max_value_2" type="array">
+      <obj_property name="ElementShortName">max_value_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/max_value_3" type="array">
+      <obj_property name="ElementShortName">max_value_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/conv2_out_1" type="array">
+      <obj_property name="ElementShortName">conv2_out_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/conv2_out_2" type="array">
+      <obj_property name="ElementShortName">conv2_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/conv2_out_3" type="array">
+      <obj_property name="ElementShortName">conv2_out_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_out_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/conv2_layer/valid_out_conv2" type="logic">
+      <obj_property name="ElementShortName">valid_out_conv2</obj_property>
+      <obj_property name="ObjectShortName">valid_out_conv2</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Max Pool Relu 2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/conv_out_1" type="array">
+      <obj_property name="ElementShortName">conv_out_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/conv_out_2" type="array">
+      <obj_property name="ElementShortName">conv_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/conv_out_3" type="array">
+      <obj_property name="ElementShortName">conv_out_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_out_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/max_value_1" type="array">
+      <obj_property name="ElementShortName">max_value_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/max_value_2" type="array">
+      <obj_property name="ElementShortName">max_value_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/max_value_3" type="array">
+      <obj_property name="ElementShortName">max_value_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/valid_out_relu" type="logic">
+      <obj_property name="ElementShortName">valid_out_relu</obj_property>
+      <obj_property name="ObjectShortName">valid_out_relu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/buffer1" type="array">
+      <obj_property name="ElementShortName">buffer1[0:3][11:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer1[0:3][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/buffer2" type="array">
+      <obj_property name="ElementShortName">buffer2[0:3][11:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer2[0:3][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/buffer3" type="array">
+      <obj_property name="ElementShortName">buffer3[0:3][11:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer3[0:3][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/pcount" type="array">
+      <obj_property name="ElementShortName">pcount[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pcount[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/maxpool_relu_2/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Fully Connected</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/data_in_1" type="array">
+      <obj_property name="ElementShortName">data_in_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/data_in_2" type="array">
+      <obj_property name="ElementShortName">data_in_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/data_in_3" type="array">
+      <obj_property name="ElementShortName">data_in_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/out_idx" type="array">
+      <obj_property name="ElementShortName">out_idx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out_idx[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/calc_out" type="array">
+      <obj_property name="ElementShortName">calc_out[19:0]</obj_property>
+      <obj_property name="ObjectShortName">calc_out[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/fully_connected/valid_out_fc" type="logic">
+      <obj_property name="ElementShortName">valid_out_fc</obj_property>
+      <obj_property name="ObjectShortName">valid_out_fc</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Comparator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/decision" type="array">
+      <obj_property name="ElementShortName">decision[3:0]</obj_property>
+      <obj_property name="ObjectShortName">decision[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/comparator/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+</wave_config>

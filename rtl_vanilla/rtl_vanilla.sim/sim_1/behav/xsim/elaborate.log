@@ -1,0 +1,27 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/ProgramFiles/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_1000_behav xil_defaultlib.top_tb_1000 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/Work/Programmer/Workspace/cnn_mnist/rtl_vanilla/rtl_vanilla.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/Work/Programmer/Workspace/cnn_mnist/rtl_vanilla/rtl_vanilla.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv1_buf
+Compiling module xil_defaultlib.conv1_calc
+Compiling module xil_defaultlib.conv1_layer
+Compiling module xil_defaultlib.maxpool_relu
+Compiling module xil_defaultlib.conv2_buf
+Compiling module xil_defaultlib.conv2_calc_1
+Compiling module xil_defaultlib.conv2_calc_2
+Compiling module xil_defaultlib.conv2_calc_3
+Compiling module xil_defaultlib.conv2_layer
+Compiling module xil_defaultlib.maxpool_relu(HALF_WIDTH=4,HALF_W...
+Compiling module xil_defaultlib.fully_connected
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.top_tb_1000
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_1000_behav

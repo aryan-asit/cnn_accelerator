@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Handwritten Digit Recognition</title>
+
+    <!-- CSS and javascript library -->
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <script src="../static/jquery-3.3.1.min.js"></script>
+    <script src="../static/popper.min.js"></script>
+    <script src="../static/bootstrap.min.js"></script>
+    <script src="../static/paper-core.min.js"></script>
+    <script src="../static/paper-full.min.js"></script>
+    <script src="../static/d3.v3.min.js"></script>
+    <script src="../static/d3.tip.v0.6.3.js"></script>
+    <script src='../static/a076d05399.js'></script>
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="../static/my_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="w-50 m-2 mx-auto text-center">
+                            <h5>Please draw a digit here:</h5>
+                        </div>
+                        <div class="w-50 m-2 mx-auto text-center">
+                            <canvas id="my_canvas" width="280" height="280"></canvas>
+                        </div>
+                        <br>
+                        <div class="w-50 m-2 mx-auto text-center">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-warning" id="predict"><b>Predict <i id="txt_status"></i></b></button>
+                                <button type="button" class="btn btn-default" id="clear">Clear</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="w-50 m-2 mx-auto text-center">
+                            <h5>The FPGA's predicted output: <h1><span class="badge badge-dark" id="result">NaN</span></h1></h5>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <h4><b>FPGA-based Handwritten Digit Recognition</b></h4>
+                        <p>This chart compares the performance between hardware accelerator and software (PyTorch) of the MNIST Handwritten Digit Recognition.</p>
+                        <div class="row">
+                            <div class="col-6 my-auto text-center">
+                                <!-- Chart -->
+                                <svg id="svg_chart"></svg>
+                            </div>
+                            <div class="col-6 my-auto text-center">
+                                <!-- Speed up -->
+                                <h3><span class="badge badge-warning">Speedup</span></h3>
+                                <h1><b><span id="txt_speed_up">0</span>×</b></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- My JS file -->
+    <script src='../static/my_script.js'></script>
+</body>
+</html>

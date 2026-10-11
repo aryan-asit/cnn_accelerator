@@ -1,0 +1,696 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Apr 12 08:58:10 2025
+| Host         : LAPTOP-6CDJM23U running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 123
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 3          |
+| TIMING-16 | Warning  | Large setup violation        | 120        |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -36.918 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -36.925 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -37.035 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -37.036 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -37.080 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -37.090 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -37.092 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -37.099 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -37.127 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -37.142 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -37.145 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -37.146 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -37.151 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -37.154 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -37.211 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -37.212 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -37.223 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -37.229 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -37.234 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -37.243 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -37.244 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -37.246 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -37.266 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -37.273 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -37.276 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -37.290 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -37.290 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -37.292 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -37.294 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -37.299 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][0]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -37.318 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -37.337 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -37.369 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -37.379 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -37.393 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -37.396 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -37.399 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -37.400 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -37.401 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -37.407 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -37.412 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -37.419 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -37.432 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -37.432 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -37.439 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -37.441 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -37.441 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -37.442 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -37.442 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -37.444 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -37.444 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -37.454 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -37.456 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -37.456 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -37.459 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -37.459 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -37.461 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -37.469 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[1][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -37.471 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[0][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -37.471 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -37.471 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -37.471 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -37.474 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -37.482 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#65 Warning
+Large setup violation  
+There is a large setup violation of -37.485 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#66 Warning
+Large setup violation  
+There is a large setup violation of -37.499 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#67 Warning
+Large setup violation  
+There is a large setup violation of -37.505 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#68 Warning
+Large setup violation  
+There is a large setup violation of -37.506 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#69 Warning
+Large setup violation  
+There is a large setup violation of -37.507 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#70 Warning
+Large setup violation  
+There is a large setup violation of -37.510 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#71 Warning
+Large setup violation  
+There is a large setup violation of -37.521 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#72 Warning
+Large setup violation  
+There is a large setup violation of -37.523 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#73 Warning
+Large setup violation  
+There is a large setup violation of -37.524 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#74 Warning
+Large setup violation  
+There is a large setup violation of -37.524 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#75 Warning
+Large setup violation  
+There is a large setup violation of -37.526 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#76 Warning
+Large setup violation  
+There is a large setup violation of -37.531 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#77 Warning
+Large setup violation  
+There is a large setup violation of -37.532 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#78 Warning
+Large setup violation  
+There is a large setup violation of -37.534 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#79 Warning
+Large setup violation  
+There is a large setup violation of -37.534 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#80 Warning
+Large setup violation  
+There is a large setup violation of -37.535 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][1]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#81 Warning
+Large setup violation  
+There is a large setup violation of -37.540 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#82 Warning
+Large setup violation  
+There is a large setup violation of -37.546 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#83 Warning
+Large setup violation  
+There is a large setup violation of -37.546 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#84 Warning
+Large setup violation  
+There is a large setup violation of -37.552 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#85 Warning
+Large setup violation  
+There is a large setup violation of -37.554 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#86 Warning
+Large setup violation  
+There is a large setup violation of -37.556 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#87 Warning
+Large setup violation  
+There is a large setup violation of -37.562 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#88 Warning
+Large setup violation  
+There is a large setup violation of -37.563 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#89 Warning
+Large setup violation  
+There is a large setup violation of -37.564 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#90 Warning
+Large setup violation  
+There is a large setup violation of -37.566 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][4]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#91 Warning
+Large setup violation  
+There is a large setup violation of -37.568 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#92 Warning
+Large setup violation  
+There is a large setup violation of -37.572 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#93 Warning
+Large setup violation  
+There is a large setup violation of -37.577 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#94 Warning
+Large setup violation  
+There is a large setup violation of -37.579 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#95 Warning
+Large setup violation  
+There is a large setup violation of -37.580 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#96 Warning
+Large setup violation  
+There is a large setup violation of -37.581 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#97 Warning
+Large setup violation  
+There is a large setup violation of -37.588 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[5][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#98 Warning
+Large setup violation  
+There is a large setup violation of -37.590 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#99 Warning
+Large setup violation  
+There is a large setup violation of -37.593 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#100 Warning
+Large setup violation  
+There is a large setup violation of -37.594 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#101 Warning
+Large setup violation  
+There is a large setup violation of -37.596 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][2]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#102 Warning
+Large setup violation  
+There is a large setup violation of -37.605 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#103 Warning
+Large setup violation  
+There is a large setup violation of -37.606 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#104 Warning
+Large setup violation  
+There is a large setup violation of -37.606 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#105 Warning
+Large setup violation  
+There is a large setup violation of -37.607 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#106 Warning
+Large setup violation  
+There is a large setup violation of -37.611 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#107 Warning
+Large setup violation  
+There is a large setup violation of -37.615 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[2][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#108 Warning
+Large setup violation  
+There is a large setup violation of -37.623 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#109 Warning
+Large setup violation  
+There is a large setup violation of -37.634 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][9]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#110 Warning
+Large setup violation  
+There is a large setup violation of -37.638 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#111 Warning
+Large setup violation  
+There is a large setup violation of -37.638 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][8]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#112 Warning
+Large setup violation  
+There is a large setup violation of -37.648 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[7][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#113 Warning
+Large setup violation  
+There is a large setup violation of -37.648 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][3]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#114 Warning
+Large setup violation  
+There is a large setup violation of -37.656 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[6][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#115 Warning
+Large setup violation  
+There is a large setup violation of -37.662 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[8][11]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#116 Warning
+Large setup violation  
+There is a large setup violation of -37.671 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[4][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#117 Warning
+Large setup violation  
+There is a large setup violation of -37.676 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[3][7]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#118 Warning
+Large setup violation  
+There is a large setup violation of -37.685 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][6]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#119 Warning
+Large setup violation  
+There is a large setup violation of -37.697 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][5]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#120 Warning
+Large setup violation  
+There is a large setup violation of -37.718 ns between design_1_i/cnn_mnist_0/inst/fully_connected/calc_out1/DSP_A_B_DATA_INST/CLK (clocked by clk_pl_0) and design_1_i/cnn_mnist_0/inst/comparator/buffer_reg[9][10]/D (clocked by clk_pl_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+
